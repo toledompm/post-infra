@@ -2,7 +2,7 @@ version: "3"
 
 services:
   blog:
-    image: ghcr.io/toledompm/post-client:0.3.0
+    image: ghcr.io/toledompm/post-client:0.4.0
     volumes:
       - ./blog/next.config.js:/app/next.config.js:ro
     ports:
