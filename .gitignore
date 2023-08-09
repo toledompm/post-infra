@@ -1,5 +1,2 @@
 .env
-nginx/assets/*.jpg
-nginx/assets/*.png
-nginx/cert
-nginx/key
+nginx/bu/*.conf
