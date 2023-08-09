@@ -4,7 +4,7 @@ start:
 
 .PHONY: update-conf
 update-conf:
-	sudo cp /etc/nginx/sites-enabled/blog_toledompm_xyz nginx/bu/$(date +%s).conf
+	sudo cp /etc/nginx/sites-enabled/blog_toledompm_xyz nginx/bu/$(shell date +%s).conf
 	sudo cp nginx/blog.conf /etc/nginx/sites-enabled/blog_toledompm_xyz
 	sudo nginx -t
 	sudo systemctl restart nginx
