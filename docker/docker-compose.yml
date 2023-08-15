@@ -15,6 +15,6 @@ services:
       - 3030:3030
     volumes:
       - ./api/.oci/:/root/.oci/
-      - ./api/index/:/app/index/
+      - ./api/index/:/root/index/
     env_file:
       - api/.env
