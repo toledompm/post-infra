@@ -1,2 +1,6 @@
 .env
 nginx/bu/*.conf
+
+api/.oci/config
+api/.oci/*.pem
+api/index/*.txt

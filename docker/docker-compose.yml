@@ -2,7 +2,7 @@ version: "3"
 
 services:
   blog:
-    image: ghcr.io/toledompm/post-client:0.5.0
+    image: ghcr.io/toledompm/post-client:0.6.0
     volumes:
       - ./blog/next.config.js:/app/next.config.js:ro
     ports:
@@ -10,8 +10,10 @@ services:
     env_file:
       - blog/.env
   api:
-    image: ghcr.io/toledompm/post-api:0.1.0
+    image: ghcr.io/toledompm/post-api:0.2.0
     ports:
       - 3030:3030
+    volumes:
+      - ./api/.oci/:/root/.oci/
     env_file:
       - api/.env
