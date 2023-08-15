@@ -9,10 +9,6 @@ services:
       - 3000:3000
     env_file:
       - blog/.env
-    deploy:
-      resources:
-        limits:
-          memory: 250M
   api:
     image: ghcr.io/toledompm/post-api:0.2.0
     ports:
@@ -22,7 +18,3 @@ services:
       - ./api/index/:/root/index/
     env_file:
       - api/.env
-    deploy:
-      resources:
-        limits:
-          memory: 250M
